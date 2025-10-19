@@ -1,0 +1,29 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* Fills space to push footer down */
+}
+
+/* Your existing footer styles */
+.foot {
+  color: white;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.fofo {
+  background-color: rgb(68, 58, 109);
+  padding: 10px 0;
+}

@@ -1,0 +1,10 @@
+html, body {
+  height: 100%;              /* make body fill the viewport */
+  margin: 0;                 /* remove default spacing */
+  display: flex;
+  flex-direction: column;    /* stack header, content, footer vertically */
+}
+
+main {
+  flex: 1;                   /* pushes footer to the bottom if content is short */
+}
