@@ -25,7 +25,7 @@ export default function Footerr() {
         />
         <div className="text-center p-3" style={{ background: "rgba(0,0,0,0.16)", borderRadius: 16, margin: "0 16px" }}>
           <a
-            href="/terms-and-conditions.pdf"
+            href="/Terms_and_Conditions.pdf"
             download="terms-and-conditions.pdf"
             style={{
               color: "#fff",
@@ -43,7 +43,7 @@ export default function Footerr() {
             Terms and Conditions
           </a>
           <a
-            href="/privacy-policy.pdf"
+            href="/Privacy_Policy.pdf"
             download="privacy-policy.pdf"
             style={{
               color: "#fff",
