@@ -4,6 +4,7 @@ import Footerr from "./footerCE";
 import Textbox from "./TextboxCE";
 import TextNav from "./TextNavCE";
 
+
 export default function CodeEditorPage() {
   const removeExtraSpacesRef = useRef(null);
   const formatRef = useRef(null);

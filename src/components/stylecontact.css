@@ -1,0 +1,94 @@
+@media (max-width: 767.98px) {
+  .card-img-top {
+    height: 140px !important;
+  }
+  .card {
+    min-height: 350px !important;
+    margin-bottom: 1.4rem !important;
+  }
+  .card-body .d-flex > a {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 1.2em !important;
+    margin: 0 4px !important;
+  }
+  .contact-main {
+    padding: 18px 0 !important;
+  }
+  .text-center.mb-4 {
+    margin-bottom: 1.4rem !important;
+  }
+}
+
+.butto{
+ background-color: rgb(160, 90, 162);
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+  border-radius: 5px;
+    
+    
+}
+.buttocont{
+   display: flex;
+  justify-content: center;
+  gap: 2rem; 
+  width: 100%; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    padding-bottom: 20px; 
+
+}
+
+.butto:hover {
+  background-color: rgb(101, 57, 102);
+}
+
+.head{
+  background-color: rgb(68, 58, 109);
+}
+.textt{
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+.textt2{
+  color: white;
+}
+.textt2:hover{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.foott {
+  color: white;
+  text-align: center;
+  width: 100%;
+  position: static ;
+  bottom: 0;
+  left: 0;
+}
+
+.fofoo{
+  background-color: rgb(68, 58, 109);
+  padding: 10px 0;
+}
+.alsec{
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  word-wrap:break-word ;
+  overflow-wrap: break-word ;
+  white-space: normal;
+  max-width:90%;
+  
+
+
+
+}
+
+.maill{
+  color:white;
+}
