@@ -21,26 +21,30 @@ export default function CodeEditorPage() {
     };
   }, []);
 
-const NGROK_API = "https://overmuch-unsavage-mona.ngrok-free.dev";
+  const NGROK_API = "https://overmuch-unsavage-mona.ngrok-free.dev";
 
-const runCode = async () => {
-  try {
-    const response = await fetch(`${NGROK_API}/run`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        code: codeValue,
-        language,
-        stdin: inputValue,
-      }),
-    });
-    const result = await response.json();
-    setOutputValue(result.output || result.error || result.stderr || "");
-  } catch (e) {
-    setOutputValue("Error: " + e.message);
-  }
-};
-
+  const runCode = async () => {
+    setOutputValue("Running...");
+    try {
+      const response = await fetch(`${NGROK_API}/run`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          code: codeValue,
+          language,
+          stdin: inputValue,
+        }),
+      });
+      const result = await response.json();
+      let outputText = result.output || result.error || result.stderr || "";
+      if (result.explanation) {
+        outputText += "\n\nGemini Explanation:\n" + result.explanation;
+      }
+      setOutputValue(outputText);
+    } catch (e) {
+      setOutputValue("Error: " + e.message);
+    }
+  };
 
   return (
     <>
